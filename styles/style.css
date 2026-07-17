@@ -55,15 +55,22 @@ ol {
 
 .content {
   display: flex;
+  flex-direction: row;
+  align-self: center;
   max-width: 1140px;
   width: 100%;
   gap: 30px;
-  align-items: flex-end;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 711px;
 }
 
 .result__video-container {
   position: relative;
-  width: 711px;
   height: 386px;
   margin-bottom: 16px;
 }
@@ -90,7 +97,8 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  /* margin-bottom: 5px; */
 }
 
 .search-form__label {
@@ -99,6 +107,7 @@ ol {
   width: fit-content;
   gap: 5px;
   cursor: pointer;
+  margin-bottom: 3px;
 }
 
 .visually-hidden {
@@ -209,6 +218,7 @@ ol {
 .search-form__submit-button {
   width: 194px;
   align-self: flex-end;
+  margin-bottom: 3px;
 }
 
 .content__details {
@@ -219,7 +229,8 @@ ol {
 }
 
 .title {
-  padding-bottom: 26px;
+  width: 260px;
+  margin-bottom: 26px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -281,7 +292,6 @@ ol {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 15px;
 }
 
 .content__video-card-description-container {
